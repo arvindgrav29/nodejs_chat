@@ -12,9 +12,7 @@ function _chat(cfg){
 		this.status = this.getNode(cfg.status);
 		this.url = cfg.url === undefined ? 'http://127.0.0.1:8080' :  cfg.url;
 	}
-   
-    var init = function(){};
-   
+    
    return this;
 }
 	
