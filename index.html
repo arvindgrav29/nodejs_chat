@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat</title>
+		<link rel="stylesheet" href="css/main.css"></link>
+	</head>
+	<body>
+		<div class="chat">
+			<input id="chatName" type="text" class="chat-name" placeholder="Enter your name">
+			<div class="chat-messages" id="chatArea">
+			</div>
+			<textarea id="chatMsg" placeholder="Type your message"></textarea>
+			<div id="statusDiv" class="chat-status">Status: <span>Idle</span></div>
+		</div>
+		
+		<script src="http://127.0.0.1:8080/socket.io/socket.io.js"></script>
+		<script src="./js/chat.js"></script>
+		<script>
+			_chat({
+				"name" : "chatName",
+				"msg" : "chatMsg",
+				"chatArea" : "chatArea",
+				"status" : "statusDiv",
+				"url" : "http://127.0.0.1:8080"
+			}).init();
+		</script>
+	</body>
+</html>
