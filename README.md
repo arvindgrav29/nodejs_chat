@@ -17,4 +17,8 @@ _chat({
 
 include ./js/chat.js in your html
 start nodejs server by node server.js
-NOTE: nodejs requires mongodb and socket.io turned on.
+NOTE: nodejs requires mongodb and socket.io module installed 
+at ./js/node which can be done by 
+1. npm install mongodb
+2. npm install socket.io
+
